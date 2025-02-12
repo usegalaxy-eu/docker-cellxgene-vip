@@ -29,5 +29,3 @@ RUN source /opt/conda/etc/profile.d/conda.sh && \
 
 ENV PATH /opt/conda/envs/VIP/bin:$PATH
 ENV CONDA_DEFAULT_ENV VIP
-
-ENTRYPOINT ["cellxgene"]
