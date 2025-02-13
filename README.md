@@ -1,7 +1,10 @@
-# docker-cellxgene-vip
-Docker image with cellxgene and the VIP plugins
+[![Docker Repository on Quay](https://quay.io/repository/bgruening/cellxgene-vip/status "Docker Repository on Quay")](https://quay.io/repository/bgruening/cellxgene-vip)
 
-To use this container you can use the following command:
+# docker-cellxgene-vip
+
+Docker image with cellxgene and the VIP plugins.
+
+To build this container you can use the following command:
 
 ```bash
 docker build -t CONTAINER_NAME .
