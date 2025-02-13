@@ -2,7 +2,7 @@
 
 # docker-cellxgene-vip
 
-Docker image with cellxgene and the VIP plugins.
+Docker image with [cellxgene](https://cellxgene.cziscience.com/) and the [VIP plugins](https://github.com/interactivereport/cellxgene_VIP).
 
 To build this container you can use the following command:
 
