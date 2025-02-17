@@ -7,10 +7,13 @@ RUN \
     # Clean cache
     && apt-get clean
 
-RUN git clone https://github.com/bobermayer/cellxgene_vip.git
+RUN git clone https://github.com/nilchia/cellxgene_VIP.git && \
+    cd cellxgene_VIP && \
+    # Fetch the commit that adds nilchia's cellxgene repo
+    git checkout 4ba9c80a430b493b0c0af40475880d722ac07747
 
 # Move into cellxgene_VIP directory
-WORKDIR cellxgene_vip
+WORKDIR cellxgene_VIP
 
 # Switch to bash terminal to run "conda" commands
 SHELL ["/bin/bash", "-c"]
@@ -27,5 +30,5 @@ RUN source /opt/conda/etc/profile.d/conda.sh && \
     # Remove unused packages
     conda clean -afy
 
-ENV PATH /opt/conda/envs/VIP/bin:$PATH
-ENV CONDA_DEFAULT_ENV VIP
+ENV PATH=/opt/conda/envs/VIP/bin:$PATH
+ENV CONDA_DEFAULT_ENV=VIP
