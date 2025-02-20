@@ -14,7 +14,7 @@ docker run --rm -it -p 5005:5005 -v PATH/TO/DATA/CONTAINING/DIRECTORY:/data CONT
 The container is stored on Quay.io and you can get it via:
 
 ```bash
-docker pull quay.io/bgruening/cellxgene-vip:1.0.1
+docker pull quay.io/bgruening/cellxgene-vip:3.1.2
 ```
 
 
